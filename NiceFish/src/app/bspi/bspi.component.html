@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charts | Nifty - Admin Template</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
+    rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="row">
+  <div class="eq-height">
+    <div class="col-sm-6 col-lg-12 eq-box-lg">
+      <div class="panel">
+        <div class="panel-heading text-center">
+          <h3 class="panel-title">环渤海动力煤价格指数BSPI（元/吨）</h3>
+        </div>
+        <div class="panel-body text-center">
+          <div class="col-sm-12">
+            <echart [chartType]="bspiLineChart" class="nf-chart"></echart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center" >
+  <table style="color: #0b75cb" border="1" class="col-sm-6 col-lg-12 eq-box-lg " height="200">
+    <tr>
+    <th height="40"></th>
+    <th class="text-center" height="40">上期</th>
+    <th class="text-center" height="40">本期</th>
+    <th class="text-center" height="40">环比</th>
+    <th class="text-center" height="40">同比</th>
+    </tr>
+    <tr>
+      <td>本周</td>
+      <td>591</td>
+      <td>604</td>
+      <td style="color: #00bcd4">-1.03%</td>
+      <td style="color: #00bcd4">53.00%</td>
+    </tr>
+    <tr>
+      <td>本月</td>
+      <td>593</td>
+      <td>599</td>
+      <td style="color: #00bcd4">-1.01%</td>
+      <td style="color: #00bcd4">54.00%</td>
+    </tr>
+    <tr>
+      <td>本年</td>
+      <td>589</td>
+      <td>605</td>
+      <td style="color: #00bcd4">-1.04%</td>
+      <td style="color: #00bcd4">52.00%</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

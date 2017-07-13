@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charts | Nifty - Admin Template</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
+        rel='stylesheet'
+        type='text/css'>
+</head>
+<body>
+<div class="row">
+  <div class="eq-height">
+    <div class="col-sm-6 col-lg-12 eq-box-lg">
+      <div class="panel">
+        <div class="panel-heading text-center">
+          <h3 class="panel-title" >运销协会（月）</h3>
+        </div>
+        <div class="panel-body text-center">
+          <div class="col-sm-12">
+            <echart [chartType]="option" class="nf-chart"></echart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <!--表格-->
+<div class="text-center" >
+  <table  border="1" class="col-sm-6 col-lg-12 eq-box-lg bor" height="220"
+         >
+    <tr bgcolor="#ff4500" height="60">
+      <th class="text-center" >月份</th>
+      <th class="text-center" >本月产量（万吨）</th>
+      <th class="text-center" >本月同比（%）</th>
+      <th class="text-center" >累计产量（万吨）</th>
+      <th class="text-center" >累计同比（%）</th>
+    </tr>
+    <tr style="border-style:dashed; border-width:1px; border-color:#000000;">
+      <td>2016-07</td>
+      <td>27001</td>
+      <td>-0.13</td>
+      <td>190080</td>
+      <td>-0.1</td>
+    </tr>
+    <tr  style="border-style:dashed; border-width:1px; border-color:#000000;">
+      <td >2016-07</td>
+      <td>27754</td>
+      <td>-16.58</td>
+      <td>172664</td>
+      <td>-9.72</td>
+    </tr>
+    <tr  style="border-style:dashed; border-width:1px; border-color:#000000;">
+      <td>2016-05</td>
+      <td>26375</td>
+      <td>-15.45</td>
+      <td>134386</td>
+      <td>-8.35</td>
+    </tr>
+    <tr  style="border-style:dashed; border-width:1px; border-color:#000000;">
+      <td>2016-04</td>
+      <td>26803</td>
+      <td>-10.96</td>
+      <td>108100</td>
+      <td>-6.75</td>
+    </tr>
+    <tr  style="border-style:dashed; border-width:1px; border-color:#000000;">
+      <td>2016-03</td>
+      <td>29380</td>
+      <td>-4.5</td>
+      <td>81127</td>
+      <td>-5.3</td>
+    </tr>
+    <tr  style="border-style:dashed; border-width:1px; border-color:#000000;">
+      <td>2016-02</td>
+      <td>21000</td>
+      <td>-6.67</td>
+      <td>52000</td>
+      <td>-4.24</td>
+    </tr>
+    <tr  style="border-style:dashed; border-width:1px; border-color:#000000;">
+      <td>2016-01</td>
+      <td>31000</td>
+      <td>6.8</td>
+      <td>31000</td>
+      <td>6.8</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

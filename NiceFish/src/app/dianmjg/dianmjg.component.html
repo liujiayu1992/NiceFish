@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charts | Nifty - Admin Template</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
+        rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="row">
+  <div class="eq-height">
+    <div class="col-sm-6 col-lg-12 eq-box-lg">
+      <div class="panel">
+        <div class="panel-heading text-center">
+          <h3 class="panel-title">中国电煤价格指数</h3>
+        </div>
+        <div class="panel-body text-center">
+          <div class="col-sm-12">
+            <echart [chartType]="dianmjgLineChart" class="nf-chart"></echart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- 表格-->
+<div class="text-center" >
+  <th>2017年2月各价区电煤价格指数 &nbsp;  &nbsp;&nbsp;   </th>
+  <th>单位：元/吨 &nbsp; &nbsp;&nbsp;</th>
+  <th>发布日期：2017/3/13</th>
+  <table style="color: #0b75cb" border="1" class="col-sm-6 col-lg-12 eq-box-lg " height="200">
+    <tr bgcolor="#6495ed" height="40">
+      <th class="text-center" >价区</th>
+      <th class="text-center" height="40">上期</th>
+      <th class="text-center" height="40">本期</th>
+      <th class="text-center" height="40">环比</th>
+      <th class="text-center" height="40">同比</th>
+    </tr>
+    <tr>
+      <td>全国</td>
+      <td>522.48</td>
+      <td>528.54</td>
+      <td>-1.14%</td>
+      <td>64.12%</td>
+    </tr>
+    <tr>
+      <td>北京市</td>
+      <td>480.2</td>
+      <td>486.9</td>
+      <td>-1.39%</td>
+      <td>41.83%</td>
+    </tr>
+    <tr>
+      <td>天津市</td>
+      <td>539.07</td>
+      <td>572.12</td>
+      <td>-5.78%</td>
+      <td>73.76%</td>
+    </tr>
+    <tr>
+      <td>冀北</td>
+      <td>498.2</td>
+      <td>504.2</td>
+      <td>-1.24%</td>
+      <td>72.08%</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

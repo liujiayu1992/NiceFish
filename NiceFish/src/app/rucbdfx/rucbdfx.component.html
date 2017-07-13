@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charts | Nifty - Admin Template</title>
+
+
+<!--STYLESHEET-->
+<!--=================================================-->
+
+<!--Open Sans Font [ OPTIONAL ]-->
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
+	rel='stylesheet' type='text/css'>
+
+<!--=================================================
+
+  REQUIRED
+  You must include this in your project.
+
+
+  RECOMMENDED
+  This category must be included but you may modify which plugins or components which should be included in your project.
+
+
+  OPTIONAL
+  Optional plugins. You may choose whether to include it in your project or not.
+
+
+  DEMONSTRATION
+  This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+
+
+  SAMPLE
+  Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
+
+
+  Detailed information and more samples can be found in the document.
+
+  =================================================-->
+
+
+</head>
+
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+<body>
+	<div id="container" class="effect aside-float aside-bright mainnav-lg">
+
+
+		<!--===================================================-->
+		<!--END NAVBAR-->
+
+		<div class="boxed">
+
+			<!--CONTENT CONTAINER-->
+			<!--===================================================-->
+
+			<!--Breadcrumb-->
+			<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+			<!-- <ol class="breadcrumb">
+				<li><a href="#">燃料指标综合展示与分析</a></li>
+				<li class="active">入厂表单分析</li>
+			</ol> -->
+			<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+			<!--End breadcrumb-->
+
+			<!--Page content-->
+			<!--===================================================-->
+			<div id="page-content">
+
+				<div class="row">
+					<div class="eq-height">
+
+						<!-- 收耗存数据（单位：万吨、%）  -->
+						<div class="col-sm-6 col-lg-6 eq-box-lg">
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">入厂标煤单价对标和预算分析（单位：元/吨、万吨）</h3>
+								</div>
+								<div class="panel-body text-center">
+									<div class="col-sm-12">
+										<echart [chartType]="rucbdfxGaugeChart" class="nf-chart"></echart>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 进煤结构（单位：%） -->
+						<div class="col-sm-6 col-lg-6 eq-box-lg">
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">入厂标单分析（单位：元/吨）</h3>
+								</div>
+								<div class="panel-body text-center">
+									<div class="col-sm-12">
+										<echart [chartType]="rucbdfxBarChart1" class="nf-chart"></echart>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+				<div class="row">
+					<div class="eq-height">
+
+						<!-- 收耗存数据（单位：万吨、%）  -->
+						<div class="col-sm-6 col-lg-6 eq-box-lg">
+							<div class="panel">
+								<div class="panel-heading">
+									<div class="col-sm-4 col-lg-4 eq-box-lg"
+										style="padding-bottom: 0px">
+										<h3 class="panel-title">入厂标煤单价趋势分析</h3>
+									</div>
+									<div class="col-sm-8 col-lg-8 eq-box-lg text-right"
+										style="padding-bottom: 0px; padding-top: 15px">
+										<label></label> <select [(ngModel)]="kouj">
+											<option *ngFor="let item of koujList" [value]='item'>{{item}}</option>
+										</select>
+									</div>
+								</div>
+								<div class="panel-body text-center">
+									<div class="col-sm-12">
+										<echart [chartType]="rucbdfxLineChart" class="nf-chart"></echart>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 库存曲线（单位：万吨） -->
+						<div class="col-sm-6 col-lg-6 eq-box-lg">
+							<div class="panel">
+								<div class="panel-heading">
+									<div class="col-sm-4 col-lg-4 eq-box-lg"
+										style="padding-bottom: 0px">
+										<h3 class="panel-title">xxxx年x月份入厂标煤单价环比差值</h3>
+									</div>
+									<div class="col-sm-8 col-lg-8 eq-box-lg text-right"
+										style="padding-bottom: 0px; padding-top: 15px">
+										<label></label> <select [(ngModel)]="huanb">
+											<option *ngFor="let item of huanbList" [value]='item'>{{item}}</option>
+										</select>
+									</div>
+								</div>
+								<div class="panel-body text-center">
+									<div class="col-sm-12">
+										<echart [chartType]="rucbdfxBarChart2" class="nf-chart"></echart>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+			</div>
+			<!--===================================================-->
+			<!--End page content-->
+
+
+			<!--===================================================-->
+			<!--END CONTENT CONTAINER-->
+
+		</div>
+
+		<!-- SCROLL PAGE BUTTON -->
+		<!--===================================================-->
+		<button class="scroll-top btn">
+			<i class="pci-chevron chevron-up"></i>
+		</button>
+		<!--===================================================-->
+
+
+
+	</div>
+	<!--===================================================-->
+	<!-- END OF CONTAINER -->
+
+
+
+</body>
+</html>
+

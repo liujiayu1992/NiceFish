@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charts | Nifty - Admin Template</title>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
+    rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="row">
+  <div class="eq-height">
+    <!-- 库存曲线（单位：万吨） -->
+    <div class="col-sm-6 col-lg-12 eq-box-lg">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title text-left" >动力煤主力[ZCM]</h3>
+        </div>
+        <div class="panel-body text-center">
+          <div class="col-sm-12">
+            <echart [chartType]="option" class="nf-chart"></echart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--柱状图-->
+<div class="row">
+  <div class="eq-height">
+    <!-- 库存曲线（单位：万吨） -->
+    <div class="col-sm-6 col-lg-12 eq-box-lg">
+      <div class="panel">
+        <div class="panel-heading">
+        </div>
+        <div class="panel-body text-center">
+          <div class="col-sm-12">
+            <echart [chartType]="donglmqhbarChart" class="nf-chart"></echart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--折线图-->
+<div class="row">
+  <div class="eq-height">
+    <!-- 库存曲线（单位：万吨） -->
+    <div class="col-sm-6 col-lg-12 eq-box-lg">
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 style="color: black">RSI_A:49.6    </h4>
+          <h4 style="color: blue">RSI_A:49.6    </h4>
+          <h4 style="color: blue">RSI_A:49.6</h4>
+        </div>
+        <div class="panel-body text-center">
+          <div class="col-sm-12">
+            <echart [chartType]="donglmqhLineChart" class="nf-chart"></echart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

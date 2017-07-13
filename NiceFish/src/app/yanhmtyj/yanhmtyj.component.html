@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charts | Nifty - Admin Template</title>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
+    rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="row">
+  <div class="eq-height">
+    <!-- 库存曲线（单位：万吨） -->
+    <div class="col-sm-6 col-lg-12 eq-box-lg">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title text-center">沿海煤炭运价指数</h3>
+        </div>
+        <div class="panel-body text-center">
+          <div class="col-sm-12">
+            <echart [chartType]="yanhmtyjAreaLineChart" class="nf-chart"></echart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--表格-->
+<div class="text-center" >
+  <table  border="1" class="col-sm-6 col-lg-12 eq-box-lg " height="220">
+    <tr bgcolor="#a9a9a9" height="60">
+      <th class="text-left" >航线</th>
+      <th>单位</th>
+      <th class="text-center" height="40">上期</th>
+      <th class="text-center" height="40">本期</th>
+      <th class="text-center" height="40">与上期比涨跌（点，元/吨）</th>
+    </tr>
+    <tr bgcolor="#00ced1">
+      <td class="text-left">综合指数</td>
+      <td>点</td>
+      <td>1125.54</td>
+      <td>1060.14</td>
+      <td>-52.12</td>
+    </tr>
+    <tr bgcolor="#00ced1">
+      <td class="text-left">秦皇岛-广州（5-6万 DWT）</td>
+      <td>元/吨</td>
+      <td>58.2</td>
+      <td>56.9</td>
+      <td>-2.3</td>
+    </tr>
+    <tr bgcolor="#00ced1">
+      <td class="text-left">秦皇岛-福州（3-4万 DWT）</td>
+      <td>元/吨</td>
+      <td>58.9</td>
+      <td>56.3</td>
+      <td>-2.6</td>
+    </tr>
+    <tr bgcolor="#00ced1">
+      <td class="text-left">秦皇岛-宁波（1.5-2万 DWT）</td>
+      <td>元/吨</td>
+      <td>51.2</td>
+      <td>50.4</td>
+      <td>-0.9</td>
+    </tr>
+    <tr bgcolor="#00ced1">
+      <td class="text-left">秦皇岛-上海（4-5万 DWT）</td>
+      <td>元/吨</td>
+      <td>45.8</td>
+      <td>43.2</td>
+      <td>-2.6</td>
+    </tr>
+    <tr bgcolor="#00ced1">
+      <td class="text-left">秦皇岛-张家港（2-3万 DWT）</td>
+      <td>元/吨</td>
+      <td>51.7</td>
+      <td>48.4</td>
+      <td>-2</td>
+    </tr>
+    <tr bgcolor="#00ced1">
+      <td class="text-left">天津-上海（2-3万 DWT）</td>
+      <td>元/吨</td>
+      <td>49</td>
+      <td>46.9</td>
+      <td>-2.1</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charts | Nifty - Admin Template</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
+        rel='stylesheet'
+        type='text/css'>
+</head>
+<body>
+<!--Sparkline Line Chart-->
+<!--===================================================-->
+<div>
+<div class="col-sm-6 col-lg-4" style="margin-bottom: 30px">
+  <table border="0" width="300" height="100">
+    <tr bgcolor="white" style="height: 10px">
+      <th></th>
+      <th></th>
+    </tr>
+    <tr bgcolor="white">
+      <th bgcolor="blue" style="font-size: 15px" class="text-center"><span style="color: white">CCTD5500</span></th>
+      <th style="font-size: 5px">2017-06-19</th>
+    </tr>
+    <tr bgcolor="white">
+      <th  style="font-size: 25px" class="text-center"><span style="color: red">569</span></th>
+      <th style="font-size: 5px">元/吨</th>
+    </tr>
+    <tr bgcolor="white">
+      <th  style="font-size: 5px" class="text-center"><span style="color: red">4</span></th>
+      <th  style="font-size: 5px"><span style="color: red">0.17%</span></th>
+    </tr>
+  </table>
+</div>
+<div class="col-sm-6 col-lg-4" style="margin-bottom: 30px">
+  <table border="0" width="300" height="100">
+    <tr bgcolor="white" style="height: 10px">
+      <th></th>
+      <th></th>
+    </tr>
+    <tr bgcolor="white">
+      <th bgcolor="blue" style="font-size: 15px" class="text-center"><span style="color: white">CCTD5000</span></th>
+      <th style="font-size: 5px">2017-06-19</th>
+    </tr>
+    <tr bgcolor="white">
+      <th  style="font-size: 25px" class="text-center"><span style="color: red">517</span></th>
+      <th style="font-size: 5px">元/吨</th>
+    </tr>
+    <tr bgcolor="white">
+      <th  style="font-size: 5px" class="text-center"><span style="color: red">16</span></th>
+      <th  style="font-size: 5px"><span style="color: red">3.19%</span></th>
+    </tr>
+  </table>
+</div>
+<div class="col-sm-6 col-lg-4" style="margin-bottom: 30px">
+  <table border="0" width="300" height="100">
+    <tr bgcolor="white" style="height: 10px">
+      <th></th>
+      <th></th>
+    </tr>
+    <tr bgcolor="white">
+      <th bgcolor="blue" style="font-size: 15px" class="text-center"><span style="color: white">CCTD4500</span></th>
+      <th style="font-size: 5px">2017-06-19</th>
+    </tr>
+    <tr bgcolor="white">
+      <th  style="font-size: 25px" class="text-center"><span style="color: red">447</span></th>
+      <th style="font-size: 5px">元/吨</th>
+    </tr>
+    <tr bgcolor="white">
+      <th  style="font-size: 5px" class="text-center"><span style="color: red">11</span></th>
+      <th  style="font-size: 5px"><span style="color: red">2.2%</span></th>
+    </tr>
+  </table>
+</div>
+</div>
+<div>
+  <div class="col-sm-6 col-lg-6">
+    <div class="panel panel-info panel-colorful">
+      <div class="pad-all">
+        <th class="text-lg text-semibold" >CCTD秦皇岛现货价格</th>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-2 col-lg-6" >
+    <div class="panel panel-info panel-colorful">
+      <div class="pad-all">
+        <th class="text-lg text-semibold" onclick="a(this)">CCTD秦皇岛长协价格</th>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="eq-height">
+    <div class="col-sm-6 col-lg-6 eq-box-lg" [hidden]="favoriteHero">
+      <div class="panel">
+        <div class="panel-heading text-center">
+          <h3 class="panel-title" >CCTD秦皇岛动力煤现货价格</h3>
+        </div>
+        <div class="panel-body text-center">
+          <div class="col-sm-12">
+            <echart [chartType]="cctdLineChart1" class="nf-chart"></echart>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 eq-box-lg" >
+      <div class="panel">
+        <div class="panel-heading text-center">
+          <h3 class="panel-title">CCTD秦皇岛动力煤长协价格</h3>
+        </div>
+        <div class="panel-body text-center">
+          <div class="col-sm-12">
+            <echart [chartType]="cctdLineChart2" class="nf-chart"></echart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

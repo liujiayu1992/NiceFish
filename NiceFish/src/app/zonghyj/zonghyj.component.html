@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charts | Nifty - Admin Template</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
+        rel='stylesheet'
+        type='text/css'>
+</head>
+<body>
+<div class="row">
+  <div class="eq-height">
+    <div class="col-sm-6 col-lg-12 eq-box-lg" [hidden]="favoriteHero">
+      <div class="panel">
+        <div class="panel-heading text-center">
+          <h3 class="panel-title" >波罗的海综合运价指数</h3>
+        </div>
+        <div class="panel-body text-center">
+          <div class="col-sm-12">
+            <echart [chartType]="zonghyjAreaLineChart" class="nf-chart"></echart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
